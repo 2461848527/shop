@@ -1,0 +1,301 @@
+{% extends "dianzhuang/bases.html"%}
+{% load static %}
+
+{% block title %}电装网站-首页{% endblock %}
+
+{% block body %}
+    <!--end-->
+				<!--end-->
+		<section class="banner">
+			<div id="owl-banner" class="owl-carousel owl-theme">
+				<div class="item" style="background:url({% static 'dianzhuang/images/index/1-1P3200Z1570-L.jpg' %})">
+					<a><img src="{% static 'dianzhuang/images/bases/banner-height.gif' %}" class="center-block" alt="幻灯3" /></a>
+				</div>
+				<div class="item" style="background:url({% static 'dianzhuang/images/index/1-1P3200Z2230-L.jpg' %})">
+					<a><img src="{% static 'dianzhuang/images/bases/banner-height.gif' %}" class="center-block" alt="幻灯3" /></a>
+				</div>
+				<div class="item" style="background:url({% static 'dianzhuang/images/index/1-1P3200Z2100-L.jpg' %})">
+					<a><img src="{% static 'dianzhuang/images/bases/banner-height.gif' %}" class="center-block" alt="幻灯3" /></a>
+				</div>
+
+			</div>
+			<div class="banner-bc"></div>
+		</section>
+		<!--end-->
+
+		<section class="case sx-jianju">
+			<div class="container text-center">
+				<div class="home-title wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+					<h2 class="h-h2-white"> 案例 </h2>
+					<p class="m-sm-white"> case </p>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<figure>
+							<a href="javascript:;" title="淘宝案例"><img src="{% static 'dianzhuang/images/index2/1-1P3201024310-L.jpg' %}" alt="淘宝案例">
+								<figcaption>
+									<h3>淘宝案例<span>设计</span></h3>
+								</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<figure>
+							<a href="javascript:;" title="京东案例"><img src="{% static 'dianzhuang/images/index2/1-1P320102J30-L.jpg' %}" alt="京东案例">
+								<figcaption>
+									<h3>京东案例<span>设计</span></h3>
+								</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<figure>
+							<a href="javascript:;" title="拼多多案例"><img src="{% static 'dianzhuang/images/index2/1-1P3201211110-L.jpg' %}" alt="拼多多案例">
+								<figcaption>
+									<h3>拼多多案例<span>设计</span></h3>
+								</figcaption>
+							</a>
+						</figure>
+					</div>
+				</div>
+				<p class="b-m-none">
+					<a href="{% url 'dianzhuang:case' %}" class="btn-center">更多案例 →</a>
+				</p>
+			</div>
+		</section>
+		<!--end-->
+
+{#		<section class="kehu sx-jianju">#}
+{#			<div class="container text-center">#}
+{#				<div class="home-title wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">#}
+{#					<h2 class="h-h2" style=" color:#333"> 合作客户 </h2>#}
+{#					<p class="m-sm"> Testimonials </p>#}
+{#				</div>#}
+{#				<div class="row">#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P3211000060-L.jpg' %}" alt="网易"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P3210959440-L.jpg' %}" alt="酷狗"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P320112Q20-L.jpg' %}" alt="赛意"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P320112J60-L.jpg' %}" alt="创科"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P320112I20-L.jpg' %}" alt="国际影城"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P320112H00-L.jpg' %}" alt="珍爱网"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P320112F40-L.jpg' %}" alt="RUST"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P3201126460-L.jpg' %}" alt="迪卡"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P3201126340-L.jpg' %}" alt="华晨"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P3201126230-L.jpg' %}" alt="LG"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P3201125570-L.jpg' %}" alt="蔬稻餐厅"></figure>#}
+{#					<figure class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><img src="{% static 'dianzhuang/images/index2/1-1P3201125430-L.jpg' %}" alt="温碧泉"></figure>#}
+{##}
+{#				</div>#}
+{#				<p class="b-m-none">#}
+{#					<a href="javascript:;" class="btn-center">更多知名客户 →</a>#}
+{#				</p>#}
+{#			</div>#}
+{#		</section>#}
+		<!--end-->
+        <section class="team sx-jianju text-center">
+			<div class="container">
+				<div class="home-title wow animated fadeInUp">
+					<h2 class="h-h2-white"> 团队 </h2>
+					<p class="m-sm-white"> team </p>
+					<p class="m-sm-white2"> 设计、策划、管理等各类高端人才系统，从办公室设计到开业全程顾问式设计服务 </p>
+				</div>
+				<div class="team-box container wow animated fadeInUp">
+					<div id="owl-team" class="owl-carousel owl-theme wow animated fadeInUp">
+						<div class="item">
+							<dl class="dl-horizontal list-unstyled">
+								<dt><a href="javascript:;" title="张鑫"><img src="{% static 'dianzhuang/images/bases/1-1P3201103480-L.jpg' %}" alt="张鑫" /></a></dt>
+								<dd>
+									<h3><a href="javascript:;" title="张鑫">张鑫</a><small>深化设计师</small></h3>
+									<p class="hg-3">学习及工作经历： 23年项目管理经验，精通施工工艺、把控工地能力强。 熟悉工地现场施工管理、国家及行业的质量标准、施工工艺及流程、验收规范、材料性能及价格等。 主持过众...</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<dl class="dl-horizontal list-unstyled">
+								<dt><a href="javascript:;" title="陈伟"><img src="{% static 'dianzhuang/images/bases/1-1P3201103480-L.jpg' %}" alt="陈伟" /></a></dt>
+								<dd>
+									<h3><a href="javascript:;" title="陈伟">陈伟</a><small>深化设计师</small></h3>
+									<p class="hg-3">学习及工作经历： 23年项目管理经验，精通施工工艺、把控工地能力强。 熟悉工地现场施工管理、国家及行业的质量标准、施工工艺及流程、验收规范、材料性能及价格等。 主持过众...</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<dl class="dl-horizontal list-unstyled">
+								<dt><a href="javascript:;" title="林凯"><img src="{% static 'dianzhuang/images/bases/1-1P3201103480-L.jpg' %}" alt="林凯" /></a></dt>
+								<dd>
+									<h3><a href="javascript:;" title="林凯">林凯</a><small>深化设计师</small></h3>
+									<p class="hg-3">学习及工作经历： 23年项目管理经验，精通施工工艺、把控工地能力强。 熟悉工地现场施工管理、国家及行业的质量标准、施工工艺及流程、验收规范、材料性能及价格等。 主持过众...</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<dl class="dl-horizontal list-unstyled">
+								<dt><a href="javascript:;" title="李强"><img src="{% static 'dianzhuang/images/bases/1-1P3201103480-L.jpg' %}" alt="李强" /></a></dt>
+								<dd>
+									<h3><a href="javascript:;" title="李强">李强</a><small>深化设计师</small></h3>
+									<p class="hg-3">学习及工作经历： 23年项目管理经验，精通施工工艺、把控工地能力强。 熟悉工地现场施工管理、国家及行业的质量标准、施工工艺及流程、验收规范、材料性能及价格等。 主持过众...</p>
+								</dd>
+							</dl>
+						</div>
+
+					</div>
+				</div>
+				<p class="t-m-30 b-m-none">
+					<a href="{% url 'dianzhuang:team' %}" class="btn-center">更多团队 →</a>
+				</p>
+			</div>
+		</section>
+		<!--end-->
+
+		<section class="youshi sx-jianju text-center">
+			<div class="container">
+				<div class="home-title wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+					<h2 class="h-h2"> 为什么选择我们 </h2>
+					<p class="m-sm"> Why choose us </p>
+					<p class="m-sm2"> 设计服务三大优势，关乎最终效果体现的根本，我们将其列为重中之重。 </p>
+				</div>
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<dl class="dl-horizontal">
+							<dt><img src="{% static 'dianzhuang/images/index2/1-1P320163434135.png' %}"></dt>
+							<dd>
+								<h3>15年诚信品牌</h3>
+								<p class="hg-2">15年诚信企业，设计与施工二级资质，追求专业设计，注重施工品质。</p>
+							</dd>
+						</dl>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<dl class="dl-horizontal">
+							<dt><img src="{% static 'dianzhuang/images/index2/1-1P320163523C9.png' %}"></dt>
+							<dd>
+								<h3>8项设计系统</h3>
+								<p class="hg-2">精确定位客户需求，提供系统化、人性化创意设计。</p>
+							</dd>
+						</dl>
+					</div>
+
+
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<dl class="dl-horizontal">
+							<dt><img src="{% static 'dianzhuang/images/index2/1-1P320163555405.png' %}"></dt>
+							<dd>
+								<h3>24小时全方位服务</h3>
+								<p class="hg-2">全方位，高品质的售后体系，24小时响应，时刻铭记为客户服务。</p>
+							</dd>
+						</dl>
+					</div>
+
+
+				</div>
+				<p class="b-m-none t-m-10">
+					<a href="{% url 'dianzhuang:youshi' %}" class="btn-center">更多优势 →</a>
+				</p>
+			</div>
+		</section>
+		<!--end-->
+
+		<section class="tixi sx-jianju">
+			<div class="container text-center">
+				<div class="home-title wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+					<h2 class="h-h2-white"> 服务体系 </h2>
+					<p class="m-sm-white"> service system </p>
+					<p class="m-sm-white2"> 高效的服务体系，打造更高端地设计作品 </p>
+				</div>
+				<div class="row system">
+					<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<figure>
+							<p class="ico"> <span class="icon-tuandui"></span> </p>
+							<h3> 15年诚信企业 </h3>
+						</figure>
+					</div>
+					<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<figure>
+							<p class="ico"> <span class="icon-sheji"></span> </p>
+							<h3> 设计优秀 </h3>
+						</figure>
+					</div>
+					<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<figure>
+							<p class="ico"> <span class="icon-chengben"></span> </p>
+							<h3> 成本控制 </h3>
+						</figure>
+					</div>
+					<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<figure>
+							<p class="ico"> <span class="icon-zhiliang"></span> </p>
+							<h3> 品质保障 </h3>
+						</figure>
+					</div>
+					<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<figure>
+							<p class="ico"> <span class="icon-zhaoming"></span> </p>
+							<h3> diy定制 </h3>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--end-->
+
+		<section class="about sx-jianju text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-lg-offset-1 col-md-offset-1">
+						<div class="home-title wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+							<h2 class="h-h2-white"> 关于 </h2>
+							<p class="m-sm-white"> About </p>
+							<p class="m-sm-white2"> 15年耕耘，上千成功案例，客户满意度高达95%以上 </p>
+						</div>
+						<p class="hg-4 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"> 厦门电装股份公司是一家以承担各类网店装修设计和制作为主，以优秀的设计和丰富的经验为无数网店设计、制作...</p>
+						<div class="row shuju">
+							<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+								<figure>
+									<figcaption>
+										<h3>15年</h3>
+										<p>资深行业经验</p>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+								<figure>
+									<figcaption>
+										<h3>8项</h3>
+										<p>设计系统保障</p>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+								<figure>
+									<figcaption>
+										<h3>1000+</h3>
+										<p>品牌成功案例</p>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+								<figure>
+									<figcaption>
+										<h3>95%</h3>
+										<p>客户满意度</p>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+						<p>
+							<a href="{% url 'dianzhuang:about' %}" class="btn-center">详细了解 →</a>
+{#							<a href="javascript:;" class="btn-center">荣誉资质 →</a>#}
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+        <script>
+			$(function() {
+				$(".navbar-nav li:first-child").addClass("hover");
+			})
+		</script>
+{% endblock %}
+
+

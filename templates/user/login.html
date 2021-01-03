@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>电装-登录</title>
+    <link rel="stylesheet" href="{% static 'user/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/unicons.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/style.css' %}">
+    <script type="text/javascript" src="{% static 'user/js/jquery-1.12.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'user/js/login.js' %}"></script>
+	<script type="text/javascript" src="{% static 'user/js/front_base.js' %}"></script>
+</head>
+
+<body>
+    <div class="section dwo">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" style="display: none">
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <form id="index_Form" method="post">
+                                    <div class="card-front">
+                                        {{ errmsg }}
+                                            <div class="center-wrap">
+                                                <div class="section text-center">
+                                                    <h4 class="mb-4 pb-3">登录</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" name="log_name" class="form-style" placeholder="请输入用户名" id="log_name" autocomplete="off">
+                                                        <i class="input-icon uil uil-at"></i>
+                                                        <span class="error_tip" style="display: none">提示信息</span>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" name="log_pass" class="form-style" placeholder="请输入密码" id="log_pass" autocomplete="off">
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                        <span class="error_tip" style="display: none">提示信息</span>
+                                                    </div>
+{#                                                <a href="javascript:" class="btn mt-4">登录</a>#}
+                                                <input type="button" id="index" class="btn mt-4" value="登录" name="submit-btn">
+                                                <div class="d-flex justify-content-between mt-4 text-left">
+                                                    <div class="flex-fill">
+                                                        <input type="checkbox" name="remember">
+                                                        <label>记住用户名</label>
+                                                    </div>
+                                                    <div class="flex-fill text-right">
+                                                        <p><a href="#" class="forgot link">忘记密码？</a></p>
+                                                    </div>
+                                                </div>
+                                                <p class="mb-0 mt-4 text-center">没有帐号？<label for="reg-log">立即注册</label></p>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="card-back">
+                                    {{ errmsg }}
+                                        <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">注册</h4>
+                                            <div class="form-group">
+                                                <input type="text" name="logname" class="form-style" placeholder="请输入用户名" id="logname" autocomplete="off">
+                                                <i class="input-icon uil uil-user"></i>
+{#                                                <span class="error_tip">提示信息</span>#}
+                                                <span class="error_tip" style="display: none">提示信息</span>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="email" name="logemail" class="form-style" placeholder="请输入电子邮箱" id="logemail" autocomplete="off">
+                                                <i class="input-icon uil uil-at"></i>
+{#                                                <span class="error_tip">提示信息</span>#}
+                                                <span class="error_tip" style="display: none">提示信息</span>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass" class="form-style" placeholder="请输入密码" id="logpass" autocomplete="off">
+                                                <i class="input-icon uil uil-lock-alt"></i>
+{#                                                <span class="error_tip">提示信息</span>#}
+                                                <span class="error_tip" style="display: none">提示信息</span>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass2" class="form-style" placeholder="请再次输入密码" id="logpass2" autocomplete="off">
+                                                <i class="input-icon uil uil-lock-alt"></i>
+{#                                                <span class="error_tip">提示信息</span>#}
+                                                <span class="error_tip" style="display: none">提示信息</span>
+                                            </div>
+{#                                            <a href="javascript:" class="btn mt-4">注册</a>#}
+                                            <input type="submit" id="register" class="btn mt-4" value="注 册" name="submit-btn">
+                                            <p class="mb-0 mt-4 text-center">已有帐号？<label for="reg-log">立即登录</label></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body></html>
